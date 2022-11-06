@@ -1,0 +1,27 @@
+{
+  "name": "hello-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.ts",
+  "scripts": {
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/netojocelino/hello-nodejs.git"
+  },
+  "author": "Jocelino Neto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/netojocelino/hello-nodejs/issues"
+  },
+  "homepage": "https://github.com/netojocelino/hello-nodejs#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
+    "@typescript-eslint/parser": "^5.38.1",
+    "date-fns": "^2.29.3",
+    "eslint": "^8.24.0",
+    "typescript": "^4.8.3",
+    "vitest": "^0.23.4"
+  }
+}
