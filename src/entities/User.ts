@@ -1,3 +1,5 @@
+import DatabaseUserRepository from "../repositories/user-repository"
+
 export interface UserProps {
     id?: string
 
@@ -24,9 +26,17 @@ class User {
         return this.props.password
     }
 
-    save (UserRepository) {
-        const model = new UserRepository
-        model.create(this)
+    toJson () {
+        return {
+            email: this.email,
+            password: this.password,
+            id: this.id,
+        }
+    }
+
+    save () {
+        const model = new DatabaseUserRepository
+        return model.create(this)
     }
 
 }
